@@ -1,0 +1,76 @@
+@font-face {
+    font-family: balsamiq;
+    src: url(../fonts/BalsamiqSansRegular.ttf);
+}
+
+body {
+    font-family: balsamiq;
+}
+
+h1 {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.boxes div {
+    background-color: #AAA;
+    color: black;
+    border: solid 3px black;
+    border-radius: 3px;
+    width: calc(33.33% - 20px);
+    float: left;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 30px 10px 10px 10px;
+    text-align: justify;
+    position: relative;
+}
+
+.boxes div h2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    border: solid 3px black;
+    border-width: 0px 0px 3px 3px;
+    min-width: 100px;
+    min-height: 24px;
+    padding: 2px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.boxes div:first-child h2 {
+    background-color: pink;
+    color: black;
+}
+
+.boxes div:nth-child(2) h2 {
+    background-color: darkred;
+    color: white;
+}
+
+.boxes div:last-child h2 {
+    background-color: khaki;
+    color: black;
+}
+
+/*tablet view*/
+@media only screen and (max-width: 991px) {
+
+    .boxes div:first-child,
+    .boxes div:nth-child(2) {
+        width: calc(50% - 20px);
+    }
+
+    .boxes div:last-child {
+        width: calc(100% - 20px);
+    }
+}
+
+/*mobile view*/
+@media only screen and (max-width: 768px) {
+    .boxes div {
+        width: calc(100% - 20px) !important;
+    }
+}
