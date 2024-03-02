@@ -1,0 +1,29 @@
+@font-face {
+    font-family: balsamiq;
+    src: url(../fonts/BalsamiqSansRegular.ttf);
+}
+
+body {
+    font-family: balsamiq;
+}
+
+h1 {
+    margin: 50px auto;
+}
+
+.row {
+    margin: 10px;
+}
+
+.box {
+    background-color: #AAA;
+    color: black;
+    border: solid 3px black;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.box p {
+    height: 1000px;
+}
